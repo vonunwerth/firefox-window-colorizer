@@ -1,0 +1,15 @@
+{
+  "name": "foxtint",
+  "version": "1.0.0",
+  "description": "FoxTint: tint the toolbar of each Firefox window",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "web-ext run -s src",
+    "lint": "web-ext lint -s src",
+    "build": "web-ext build -s src -a dist --overwrite-dest"
+  },
+  "devDependencies": {
+    "web-ext": "^8.0.0"
+  }
+}

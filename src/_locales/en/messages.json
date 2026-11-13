@@ -1,0 +1,94 @@
+{
+  "extName": {
+    "message": "FoxTint"
+  },
+  "extDescription": {
+    "message": "Tint the toolbar of each Firefox window so you can tell your windows apart at a glance."
+  },
+  "popupHint": {
+    "message": "Pick a color for this window:"
+  },
+  "popupReset": {
+    "message": "Reset"
+  },
+  "popupSettings": {
+    "message": "Settings"
+  },
+  "popupEmpty": {
+    "message": "No colors enabled. Choose some in the settings."
+  },
+  "optPresetsTitle": {
+    "message": "Preset colors"
+  },
+  "optPresetsHint": {
+    "message": "Choose which colors appear in the popup."
+  },
+  "optCustomTitle": {
+    "message": "Custom colors"
+  },
+  "optCustomHint": {
+    "message": "Add any colors of your own."
+  },
+  "optCustomNamePlaceholder": {
+    "message": "Name (optional)"
+  },
+  "optAdd": {
+    "message": "Add"
+  },
+  "optRemove": {
+    "message": "Remove"
+  },
+  "optCount": {
+    "message": "Active colors: $COUNT$ of max. $MAX$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "optResetDefaults": {
+    "message": "Reset to defaults"
+  },
+  "optSaved": {
+    "message": "Saved ✓"
+  },
+  "color_blue": {
+    "message": "Blue"
+  },
+  "color_orange": {
+    "message": "Orange"
+  },
+  "color_green": {
+    "message": "Green"
+  },
+  "color_purple": {
+    "message": "Purple"
+  },
+  "color_pink": {
+    "message": "Pink"
+  },
+  "color_red": {
+    "message": "Red"
+  },
+  "color_yellow": {
+    "message": "Yellow"
+  },
+  "color_teal": {
+    "message": "Teal"
+  },
+  "color_brown": {
+    "message": "Brown"
+  },
+  "color_graphite": {
+    "message": "Graphite"
+  },
+  "color_navy": {
+    "message": "Navy"
+  },
+  "color_lime": {
+    "message": "Lime"
+  }
+}

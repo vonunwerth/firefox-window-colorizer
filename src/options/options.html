@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="../icons/foxtint-96.png" alt="" width="48" height="48">
+      <h1 data-i18n="extName"></h1>
+    </header>
+
+    <section>
+      <h2 data-i18n="optPresetsTitle"></h2>
+      <p class="hint" data-i18n="optPresetsHint"></p>
+      <div id="presets" class="list"></div>
+    </section>
+
+    <section>
+      <h2 data-i18n="optCustomTitle"></h2>
+      <p class="hint" data-i18n="optCustomHint"></p>
+      <div id="custom" class="list"></div>
+      <form id="addForm" class="add">
+        <input type="color" id="newHex" value="#0A84FF" aria-label="Color">
+        <input type="text" id="newName" maxlength="24" data-i18n-placeholder="optCustomNamePlaceholder">
+        <button type="submit" data-i18n="optAdd"></button>
+      </form>
+    </section>
+
+    <section>
+      <p id="count" class="hint"></p>
+      <button id="resetDefaults" type="button" data-i18n="optResetDefaults"></button>
+      <span id="saved" class="saved" hidden data-i18n="optSaved"></span>
+    </section>
+  </main>
+  <script src="../colors.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

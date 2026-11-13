@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/foxtint-16.png",
+    "32": "icons/foxtint-32.png",
+    "48": "icons/foxtint-48.png",
+    "96": "icons/foxtint-96.png",
+    "128": "icons/foxtint-128.png"
+  },
+  "permissions": ["theme", "storage", "sessions"],
+  "background": {
+    "scripts": ["colors.js", "background.js"]
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/foxtint-16.png",
+      "32": "icons/foxtint-32.png"
+    },
+    "default_title": "__MSG_extName__",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "foxtint@vonunwerth.github.io",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

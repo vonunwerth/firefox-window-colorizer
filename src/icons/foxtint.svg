@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00B3F4"/>
+      <stop offset="1" stop-color="#0A84FF"/>
+    </linearGradient>
+    <linearGradient id="blueDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A84FF"/>
+      <stop offset="1" stop-color="#0060DF"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB400"/>
+      <stop offset="1" stop-color="#FF7139"/>
+    </linearGradient>
+  </defs>
+
+  <!-- body -->
+  <path d="M8 128 Q10 102 40 98 L88 98 Q118 102 120 128 Z" fill="url(#blueDark)"/>
+
+  <!-- ears -->
+  <path d="M18 8 L52 32 L24 62 Z" fill="url(#blueDark)"/>
+  <path d="M110 8 L76 32 L104 62 Z" fill="url(#blueDark)"/>
+  <path d="M24 22 L42 35 L27 52 Z" fill="#7FD6FF"/>
+  <path d="M104 22 L86 35 L101 52 Z" fill="#7FD6FF"/>
+
+  <!-- head -->
+  <path d="M22 50 Q64 26 106 50 L114 72 Q98 100 64 114 Q30 100 14 72 Z" fill="url(#blue)"/>
+  <!-- white cheeks / muzzle -->
+  <path d="M15 73 Q40 70 64 86 Q88 70 113 73 Q98 100 64 114 Q30 100 15 73 Z" fill="#EAF6FF"/>
+
+  <!-- happy closed eyes -->
+  <path d="M38 62 Q46 53 54 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M74 62 Q82 53 90 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- nose -->
+  <path d="M57 84 Q64 80 71 84 Q68 91 64 92 Q60 91 57 84 Z" fill="#0B1B4A"/>
+
+  <!-- raised arm + paw -->
+  <path d="M114 128 Q112 114 102 104" fill="none" stroke="#0A74EE" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="94" cy="98" r="15" fill="#1A93FF"/>
+  <path d="M84 90 Q94 80 104 90" fill="none" stroke="#EAF6FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M88 97 L90 106 M94 96 L94 107 M100 97 L98 106" stroke="#0060DF" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- mouth + tongue licking the paw -->
+  <path d="M64 92 L64 97" stroke="#0B1B4A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 98 Q58 104 64 97 Q70 104 76 100" fill="none" stroke="#0B1B4A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M62 99 Q74 101 82 100 Q91 99 91 106 Q90 112 82 111 Q70 111 62 103 Z" fill="url(#orange)"/>
+  <path d="M68 104 Q78 106 86 105" fill="none" stroke="#E65A1F" stroke-width="1.8" stroke-linecap="round" opacity=".6"/>
+</svg>

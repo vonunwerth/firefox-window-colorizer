@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/foxtint-32.png" alt="" width="20" height="20">
+    <strong data-i18n="extName"></strong>
+  </header>
+  <p class="hint" data-i18n="popupHint"></p>
+  <div id="swatches" class="swatches" role="list"></div>
+  <p id="empty" class="hint" hidden data-i18n="popupEmpty"></p>
+  <footer>
+    <button id="reset" type="button" data-i18n="popupReset"></button>
+    <button id="settings" type="button" data-i18n="popupSettings"></button>
+  </footer>
+  <script src="../colors.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

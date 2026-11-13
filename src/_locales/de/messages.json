@@ -1,0 +1,94 @@
+{
+  "extName": {
+    "message": "FoxTint"
+  },
+  "extDescription": {
+    "message": "Färbe die Symbolleiste jedes Firefox-Fensters ein, um Fenster auf einen Blick zu unterscheiden."
+  },
+  "popupHint": {
+    "message": "Farbe für dieses Fenster wählen:"
+  },
+  "popupReset": {
+    "message": "Zurücksetzen"
+  },
+  "popupSettings": {
+    "message": "Einstellungen"
+  },
+  "popupEmpty": {
+    "message": "Keine Farben aktiv. Wähle welche in den Einstellungen."
+  },
+  "optPresetsTitle": {
+    "message": "Vorgegebene Farben"
+  },
+  "optPresetsHint": {
+    "message": "Wähle, welche Farben im Popup erscheinen."
+  },
+  "optCustomTitle": {
+    "message": "Eigene Farben"
+  },
+  "optCustomHint": {
+    "message": "Füge beliebige eigene Farben hinzu."
+  },
+  "optCustomNamePlaceholder": {
+    "message": "Name (optional)"
+  },
+  "optAdd": {
+    "message": "Hinzufügen"
+  },
+  "optRemove": {
+    "message": "Entfernen"
+  },
+  "optCount": {
+    "message": "Aktive Farben: $COUNT$ von maximal $MAX$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "optResetDefaults": {
+    "message": "Auf Standard zurücksetzen"
+  },
+  "optSaved": {
+    "message": "Gespeichert ✓"
+  },
+  "color_blue": {
+    "message": "Blau"
+  },
+  "color_orange": {
+    "message": "Orange"
+  },
+  "color_green": {
+    "message": "Grün"
+  },
+  "color_purple": {
+    "message": "Lila"
+  },
+  "color_pink": {
+    "message": "Pink"
+  },
+  "color_red": {
+    "message": "Rot"
+  },
+  "color_yellow": {
+    "message": "Gelb"
+  },
+  "color_teal": {
+    "message": "Türkis"
+  },
+  "color_brown": {
+    "message": "Braun"
+  },
+  "color_graphite": {
+    "message": "Graphit"
+  },
+  "color_navy": {
+    "message": "Dunkelblau"
+  },
+  "color_lime": {
+    "message": "Limette"
+  }
+}
