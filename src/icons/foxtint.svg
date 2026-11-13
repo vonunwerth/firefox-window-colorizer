@@ -12,38 +12,51 @@
       <stop offset="0" stop-color="#FFB400"/>
       <stop offset="1" stop-color="#FF7139"/>
     </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D6ECFF"/>
+    </linearGradient>
   </defs>
 
   <!-- body -->
-  <path d="M8 128 Q10 102 40 98 L88 98 Q118 102 120 128 Z" fill="url(#blueDark)"/>
+  <path d="M6 128 C6 108 22 98 42 96 L86 96 C106 98 122 108 122 128 Z" fill="url(#blueDark)"/>
 
-  <!-- ears -->
-  <path d="M18 8 L52 32 L24 62 Z" fill="url(#blueDark)"/>
-  <path d="M110 8 L76 32 L104 62 Z" fill="url(#blueDark)"/>
-  <path d="M24 22 L42 35 L27 52 Z" fill="#7FD6FF"/>
-  <path d="M104 22 L86 35 L101 52 Z" fill="#7FD6FF"/>
+  <!-- ears (rounded via stroke-linejoin) -->
+  <g stroke-linejoin="round" stroke-width="8">
+    <path d="M20 16 C34 22 46 30 52 38 L28 58 C20 46 18 30 20 16 Z" fill="url(#blueDark)" stroke="#0A74EE"/>
+    <path d="M108 16 C94 22 82 30 76 38 L100 58 C108 46 110 30 108 16 Z" fill="url(#blueDark)" stroke="#0A74EE"/>
+  </g>
+  <g stroke-linejoin="round" stroke-width="5">
+    <path d="M26 26 C33 30 38 34 41 38 L30 48 C27 42 26 34 26 26 Z" fill="#8EDBFF" stroke="#8EDBFF"/>
+    <path d="M102 26 C95 30 90 34 87 38 L98 48 C101 42 102 34 102 26 Z" fill="#8EDBFF" stroke="#8EDBFF"/>
+  </g>
 
-  <!-- head -->
-  <path d="M22 50 Q64 26 106 50 L114 72 Q98 100 64 114 Q30 100 14 72 Z" fill="url(#blue)"/>
-  <!-- white cheeks / muzzle -->
-  <path d="M15 73 Q40 70 64 86 Q88 70 113 73 Q98 100 64 114 Q30 100 15 73 Z" fill="#EAF6FF"/>
+  <!-- head with soft cheek tufts -->
+  <path d="M64 30 C86 30 106 38 108 56 C109 62 114 66 116 70 C112 72 110 76 108 80 C100 102 82 114 64 114 C46 114 28 102 20 80 C18 76 16 72 12 70 C14 66 19 62 20 56 C22 38 42 30 64 30 Z" fill="url(#blue)"/>
+  <!-- white muzzle -->
+  <path d="M13 71 C30 72 46 76 64 88 C82 76 98 72 115 71 C111 73 110 76 108 80 C100 102 82 114 64 114 C46 114 28 102 20 80 C18 76 17 73 13 71 Z" fill="url(#white)"/>
+  <!-- soft highlight -->
+  <path d="M34 46 C42 38 54 35 66 35" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/>
 
-  <!-- happy closed eyes -->
-  <path d="M38 62 Q46 53 54 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M74 62 Q82 53 90 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- happy eyes -->
+  <path d="M38 62 C42 54 52 54 56 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M72 62 C76 54 86 54 90 62" fill="none" stroke="#0B1B4A" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- cheeks -->
+  <ellipse cx="32" cy="76" rx="6" ry="3.5" fill="#FF9FB8" opacity=".45"/>
 
   <!-- nose -->
-  <path d="M57 84 Q64 80 71 84 Q68 91 64 92 Q60 91 57 84 Z" fill="#0B1B4A"/>
+  <path d="M56 83 C56 79 72 79 72 83 C72 88 66 92 64 92 C62 92 56 88 56 83 Z" fill="#0B1B4A"/>
+  <ellipse cx="61.5" cy="82.3" rx="2.4" ry="1.1" fill="#FFFFFF" opacity=".5"/>
 
-  <!-- raised arm + paw -->
-  <path d="M114 128 Q112 114 102 104" fill="none" stroke="#0A74EE" stroke-width="22" stroke-linecap="round"/>
-  <circle cx="94" cy="98" r="15" fill="#1A93FF"/>
-  <path d="M84 90 Q94 80 104 90" fill="none" stroke="#EAF6FF" stroke-width="5" stroke-linecap="round"/>
-  <path d="M88 97 L90 106 M94 96 L94 107 M100 97 L98 106" stroke="#0060DF" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- raised arm and paw -->
+  <path d="M114 128 C114 116 108 108 100 102" fill="none" stroke="#0A74EE" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="95" cy="98" r="15" fill="#1A93FF"/>
+  <path d="M86 90 C90 85 100 85 104 90" fill="none" stroke="#7FC4FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M89 99 C89 102 90 104 90 106 M95 98 C95 102 95 105 95 107 M101 99 C101 102 100 104 100 106" fill="none" stroke="#0060DF" stroke-width="2.2" stroke-linecap="round"/>
 
-  <!-- mouth + tongue licking the paw -->
-  <path d="M64 92 L64 97" stroke="#0B1B4A" stroke-width="3" stroke-linecap="round"/>
-  <path d="M52 98 Q58 104 64 97 Q70 104 76 100" fill="none" stroke="#0B1B4A" stroke-width="3" stroke-linecap="round"/>
-  <path d="M62 99 Q74 101 82 100 Q91 99 91 106 Q90 112 82 111 Q70 111 62 103 Z" fill="url(#orange)"/>
-  <path d="M68 104 Q78 106 86 105" fill="none" stroke="#E65A1F" stroke-width="1.8" stroke-linecap="round" opacity=".6"/>
+  <!-- mouth -->
+  <path d="M64 92 L64 97 M53 97 C57 103 62 102 64 97 C66 102 71 103 75 98" fill="none" stroke="#0B1B4A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- tongue licking the paw -->
+  <path d="M62 99 C68 101 76 100 83 99 C91 98 96 102 95 107 C94 113 86 113 80 112 C71 111 65 107 62 99 Z" fill="url(#orange)"/>
+  <path d="M68 104 C76 107 84 107 89 105" fill="none" stroke="#E65A1F" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
 </svg>
