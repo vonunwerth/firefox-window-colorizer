@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 14 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="headFill" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#3FC8FF"/>
+      <stop offset="0.55" stop-color="#0A9BFF"/>
+      <stop offset="1" stop-color="#0A6FE8"/>
+    </radialGradient>
+    <linearGradient id="bodyFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A84FF"/>
+      <stop offset="1" stop-color="#0250BB"/>
+    </linearGradient>
+    <linearGradient id="tailFill" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0250BB"/>
+      <stop offset="1" stop-color="#1A9CFF"/>
+    </linearGradient>
+    <linearGradient id="earFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0060DF"/>
+      <stop offset="1" stop-color="#0A84FF"/>
+    </linearGradient>
+    <linearGradient id="innerEar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7AD3FF"/>
+      <stop offset="1" stop-color="#C9EEFF"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCEFFF"/>
+    </linearGradient>
+    <linearGradient id="paw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A8CFF"/>
+      <stop offset="1" stop-color="#0057CC"/>
+    </linearGradient>
+    <linearGradient id="tongue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFA436"/>
+      <stop offset="1" stop-color="#FF7139"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD567"/>
+      <stop offset="1" stop-color="#FF7139"/>
+    </linearGradient>
+
+    <path id="headShape" d="M128 54 C162 54 188 70 194 96 C197 108 200 118 208 128 C213 133 219 136 225 138 C216 142 208 144 201 146 C205 150 209 154 213 159 C201 160 191 162 182 168 C166 182 148 190 128 192 C108 190 90 182 74 168 C65 162 55 160 43 159 C47 154 51 150 55 146 C48 144 40 142 31 138 C37 136 43 133 48 128 C56 118 59 108 62 96 C68 70 94 54 128 54 Z"/>
+    <path id="tailShape" d="M104 250 C60 258 20 238 14 198 C10 172 22 150 42 144 C58 140 68 152 62 166 C52 186 56 208 76 222 C86 229 98 232 108 236 Z"/>
+    <clipPath id="headClip"><use href="#headShape"/></clipPath>
+    <clipPath id="tailClip"><use href="#tailShape"/></clipPath>
+  </defs>
+
+  <g stroke="#0B2A6B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- tail with white tip -->
+    <use href="#tailShape" fill="url(#tailFill)"/>
+    <g clip-path="url(#tailClip)" stroke="none">
+      <path d="M0 120 L80 120 C70 136 64 150 60 166 C55 164 52 166 50 172 C45 168 41 170 38 176 C33 172 29 172 25 178 C20 174 14 174 0 178 Z" fill="url(#white)"/>
+    </g>
+    <g clip-path="url(#tailClip)"><path d="M60 166 C55 164 52 166 50 172 C45 168 41 170 38 176 C33 172 29 172 25 178 C20 174 14 174 0 178" fill="none" stroke="#7FC4FF" stroke-width="2.5"/></g>
+    <use href="#tailShape" fill="none"/>
+    <path d="M30 200 C34 216 46 228 62 236" fill="none" stroke="#5CC0FF" stroke-width="2.5" opacity=".6"/>
+
+    <!-- body -->
+    <path d="M78 256 C74 222 86 192 104 180 L152 180 C170 192 184 222 180 256 Z" fill="url(#bodyFill)"/>
+    <!-- chest fluff -->
+    <path d="M98 180 L158 180 C162 198 156 214 148 224 C145 220 143 218 140 216 C139 222 136 228 132 232 C129 227 127 222 126 218 C122 223 118 226 113 228 C113 222 113 218 112 214 C108 216 105 218 101 220 C102 214 102 208 100 202 C97 196 96 188 98 180 Z" fill="url(#white)"/>
+
+    <!-- ears -->
+    <path d="M66 100 C58 72 52 46 55 27 C56 20 63 18 68 23 C84 37 100 51 113 64 Z" fill="url(#earFill)"/>
+    <path d="M190 100 C198 72 204 46 201 27 C200 20 193 18 188 23 C172 37 156 51 143 64 Z" fill="url(#earFill)"/>
+    <g stroke="none">
+      <path d="M74 90 C69 70 65 52 66 38 C78 50 90 60 101 70 Z" fill="url(#innerEar)"/>
+      <path d="M182 90 C187 70 191 52 190 38 C178 50 166 60 155 70 Z" fill="url(#innerEar)"/>
+    </g>
+    <!-- ear fluff -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="2.5">
+      <path d="M76 86 C76 76 78 70 82 64"/>
+      <path d="M82 84 C84 76 88 72 92 70"/>
+      <path d="M180 86 C180 76 178 70 174 64"/>
+      <path d="M174 84 C172 76 168 72 164 70"/>
+    </g>
+
+    <!-- head -->
+    <use href="#headShape" fill="url(#headFill)"/>
+    <g clip-path="url(#headClip)" stroke="none">
+      <!-- forehead blaze -->
+      <path d="M128 58 C138 78 138 108 128 138 C118 108 118 78 128 58 Z" fill="#7AD3FF" opacity=".35"/>
+      <!-- white muzzle + cheeks -->
+      <path d="M10 134 C46 124 84 118 104 128 C116 134 122 142 128 146 C134 142 140 134 152 128 C172 118 210 124 246 134 L246 240 L10 240 Z" fill="url(#white)"/>
+      <!-- cheek fur lines -->
+      <g fill="none" stroke="#B8DEFA" stroke-width="2">
+        <path d="M54 146 C62 148 70 152 76 158"/>
+        <path d="M202 146 C194 148 186 152 180 158"/>
+      </g>
+      <!-- head shine -->
+      <path d="M86 74 C98 64 112 60 124 60" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+    </g>
+    <use href="#headShape" fill="none"/>
+    <!-- forehead tufts -->
+    <g fill="none" stroke="#0A6FE8" stroke-width="2.5" opacity=".55">
+      <path d="M120 60 C122 66 124 70 128 72"/>
+      <path d="M136 60 C134 66 132 70 128 72"/>
+    </g>
+
+    <!-- eyes (happy, closed) -->
+    <g fill="none" stroke="#0B1B4A" stroke-width="5">
+      <path d="M88 116 C94 105 108 105 114 116"/>
+      <path d="M142 116 C148 105 162 105 168 116"/>
+      <path d="M88 116 L81 112" stroke-width="3.5"/>
+      <path d="M168 116 L175 112" stroke-width="3.5"/>
+    </g>
+    <!-- blush -->
+    <g stroke="none" fill="#FF8FA3" opacity=".5">
+      <ellipse cx="84" cy="136" rx="10" ry="5"/>
+      <ellipse cx="172" cy="136" rx="10" ry="5"/>
+    </g>
+
+    <!-- nose -->
+    <path d="M115 147 C115 140 141 140 141 147 C141 154 132 161 128 161 C124 161 115 154 115 147 Z" fill="#0B1B4A"/>
+    <ellipse cx="123" cy="145" rx="4.5" ry="2" fill="#FFFFFF" opacity=".55" stroke="none"/>
+
+    <!-- arm + paw (dark socks) -->
+    <path d="M216 256 C216 228 208 206 196 192" fill="none" stroke="#0B2A6B" stroke-width="40"/>
+    <path d="M216 256 C216 228 208 206 196 192" fill="none" stroke="url(#bodyFill)" stroke-width="34"/>
+    <ellipse cx="190" cy="174" rx="25" ry="23" fill="url(#paw)"/>
+    <path d="M174 162 C182 154 198 154 206 162" fill="none" stroke="#5CC0FF" stroke-width="3" opacity=".8"/>
+    <g fill="none" stroke="#0B2A6B" stroke-width="2.5">
+      <path d="M181 176 C181 182 182 188 183 192"/>
+      <path d="M191 174 C191 182 191 188 191 194"/>
+      <path d="M201 176 C201 182 200 188 199 192"/>
+    </g>
+
+    <!-- mouth -->
+    <g fill="none" stroke="#0B1B4A" stroke-width="3.5">
+      <path d="M128 161 L128 168"/>
+      <path d="M113 167 C119 176 126 174 128 168 C130 174 136 176 142 169"/>
+    </g>
+
+    <!-- tongue licking the paw -->
+    <path d="M127 171 C139 174 151 172 162 169 C174 166 182 172 180 181 C178 190 166 190 154 188 C142 186 132 180 127 171 Z" fill="url(#tongue)" stroke-width="2.5"/>
+    <path d="M140 177 C150 181 162 182 172 179" fill="none" stroke="#D9481A" stroke-width="2" opacity=".6"/>
+    <path d="M152 173 C158 173 164 171 168 170" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".55"/>
+
+    <!-- lick sparkles -->
+    <g stroke-width="1.5" fill="url(#spark)">
+      <path d="M226 158 C227 164 229 166 235 167 C229 168 227 170 226 176 C225 170 223 168 217 167 C223 166 225 164 226 158 Z"/>
+      <path d="M232 186 C233 189 234 190 237 191 C234 192 233 193 232 196 C231 193 230 192 227 191 C230 190 231 189 232 186 Z"/>
+    </g>
+  </g>
+</svg>
