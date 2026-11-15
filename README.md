@@ -22,10 +22,14 @@ npm start        # starts Firefox with the add-on loaded (web-ext)
 
 Or in Firefox: `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on…* → select `src/manifest.json`.
 
+## Install (ready-made package)
+
+Download [`releases/foxtint-1.0.0.zip`](releases/foxtint-1.0.0.zip). The `manifest.json` is at the root of this ZIP, so it can be uploaded to [addons.mozilla.org](https://addons.mozilla.org/developers/) as an unlisted (self-distributed) add-on to get a signed `.xpi`. Do **not** upload GitHub's "Download ZIP" of the repo; there the add-on sits in `src/`.
+
 ## Build
 
 ```bash
-npm run build    # creates a zip in dist/
+npm run build    # creates a zip in dist/ (manifest.json at its root)
 ```
 
 ## Notes
