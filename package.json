@@ -1,6 +1,6 @@
 {
   "name": "foxtint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FoxTint: tint the toolbar of each Firefox window",
   "private": true,
   "license": "MIT",

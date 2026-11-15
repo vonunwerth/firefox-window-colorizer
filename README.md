@@ -24,7 +24,11 @@ Or in Firefox: `about:debugging#/runtime/this-firefox` → *Load Temporary Add-o
 
 ## Install (ready-made package)
 
-Download [`releases/foxtint-1.0.0.zip`](releases/foxtint-1.0.0.zip). The `manifest.json` is at the root of this ZIP, so it can be uploaded to [addons.mozilla.org](https://addons.mozilla.org/developers/) as an unlisted (self-distributed) add-on to get a signed `.xpi`. Do **not** upload GitHub's "Download ZIP" of the repo; there the add-on sits in `src/`.
+Download [`releases/foxtint-1.0.1.zip`](releases/foxtint-1.0.1.zip). The `manifest.json` is at the root of this ZIP, so it can be uploaded to [addons.mozilla.org](https://addons.mozilla.org/developers/) as an unlisted (self-distributed) add-on to get a signed `.xpi`. Do **not** upload GitHub's "Download ZIP" of the repo; there the add-on sits in `src/`.
+
+## Store listing
+
+Texts, permission notes and screenshots for addons.mozilla.org: see [`docs/store-listing.md`](docs/store-listing.md).
 
 ## Build
 
@@ -36,7 +40,7 @@ npm run build    # creates a zip in dist/ (manifest.json at its root)
 
 - Uses the per-window `browser.theme.update(windowId, …)` API. It overrides your current theme in colored windows; *Reset* restores it.
 - For private windows, allow the add-on to run in private windows in `about:addons`.
-- Needs Firefox 115 or newer.
+- Needs Firefox 140 or newer.
 
 ## License
 
